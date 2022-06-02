@@ -1,0 +1,29 @@
+GET http://localhost:3100/barang
+
+###
+
+POST http://localhost:3100/barang
+content-type: application/json
+
+{
+  "name": "Lemari",
+  "harga" : 500000,
+  "qty": 10
+}
+
+###
+GET http://localhost:3100/barang/6295d670de477f64ae89f748
+
+###
+
+DELETE http://localhost:3100/barang/6295d670de477f64ae89f748
+
+###
+PATCH http://localhost:3100/barang/6295d670de477f64ae89f748
+content-type: application/json
+
+{
+  "name": "Kursi",
+  "harga" : 200000,
+  "qty": 15
+}
